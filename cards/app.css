@@ -1,0 +1,33 @@
+body {
+  text-align: center;
+  background-color: green;
+}
+
+#btn {
+  background-color: rgb(250, 250, 248);
+  color: darkred;
+  border-radius: 4px;
+  border: 1px solid green;
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+
+#img-container {
+  margin-top: 20px;
+  position: relative;
+}
+
+#img-container > img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition: z-index 0.3s ease-in-out;
+  margin: auto;
+}
+
+#img-container::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
